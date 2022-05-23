@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>Inês Ganhão | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c3fd22b8e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a id="home" href="#">IG</a>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-bars fa-2xl"></i>
+                </li>
+                <li class="subrayado">
+                    <a href="#biografia">ACERCA DE</a>
+                </li>
+                <li class="subrayado">
+                    <a href="#proyectos">PROYECTOS</a>
+                </li>
+                <li class="subrayado">
+                    <a href="#contacto">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="biografia">
+        <h1 class="titulo">
+            Hola, soy Inês Ganhão
+        </h1>
+        <p>
+            Soy una estudiante de diseño gráfico y diseño de producto, basada en Lisboa.
+        </p>
+    </section>
+
+    <section id="proyectos">
+        <h1 class="titulo">Mis proyectos</h1>
+        <div class="derecha">
+            <p>
+                <span class="numero">01</span>
+                <br>
+                <br>
+                Catálogo de arte sobre las pinturas de mariposas de Damien Hirst
+            </p>
+            <figure>
+                <img src="img/p01.jpg" alt="Mockup de las cubiertas">
+            </figure>
+        </div>
+
+        <div class="izquierda">
+            <figure>
+                <img src="img/p02.jpg" alt="Mockup del cartel">
+            </figure>
+            <p>
+                <span class="numero">02</span>
+                <br>
+                <br>
+                Cartel publicitario de un evento especial para la película <em>The League of Extraordinary
+                    Gentlemen</em>
+            </p>
+        </div>
+
+        <div class="derecha">
+            <p>
+                <span class="numero">03</span>
+                <br>
+                <br>
+                Calendario artistico inspirado en las pinturas al contado de Damien Hirst
+            </p>
+            <figure>
+                <img src="img/p03.jpg" alt="Mockup del calendario">
+            </figure>
+        </div>
+
+        <div class="izquierda">
+            <figure>
+                <img src="img/p04.jpg" alt="Mockup de las cajas">
+            </figure>
+            <p>
+                <span class="numero">04</span>
+                <br>
+                <br>
+                Rebranding de una tienda de informática
+            </p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h1 class="titulo">
+            Contáctame
+        </h1>
+        <div class="informacion">
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.822457082959!2d-3.669508084654752!3d40.45706637936041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42292a2a67e76f%3A0x7661d685faad2ff8!2sESNE%2C%20Escuela%20Universitaria%20de%20Dise%C3%B1o%2C%20Innovaci%C3%B3n%20y%20Tecnolog%C3%ADa!5e0!3m2!1spt-PT!2ses!4v1652088975751!5m2!1spt-PT!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="informacion2">
+                    <p>
+                        Inês Ganhão
+                        <br>
+                        Avda. de Alfonso XIII, 97
+                        <br>
+                        28016 Madrid
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="blank" title="Se abre una nueva pestaña">
+                                <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/" target="blank" title="Se abre una nueva pestaña">
+                                <i class="fa-brands fa-behance fa-2xl"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="blank" title="Se abre una nueva pestaña">
+                                <i class="fa-brands fa-instagram fa-2xl"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <form name="contactar">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" placeholder="Nombre">
+                    <label for="correo"></label>
+                    <input type="email" id="correo" placeholder="Correo electrónico" name="email" onblur="emailchk()">
+                    <label for="mensaje"></label>
+                    <textarea id="mensaje" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

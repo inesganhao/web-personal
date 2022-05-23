@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    cursor: crosshair;
+}
+
+body {
+    background-color: #FBFCFF;
+    color: #2429AF;
+}
+
+a {
+    text-decoration: none;
+    color: #2429AF;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    height: 0;
+    padding: 3em 3em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#home {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2429AF;
+    transition: 0.3s;
+}
+
+#home:hover {
+    text-shadow: 3px 3px #2429af34;
+}
+
+#menu ul {
+    width: 27em;
+    padding-left: 0;
+    padding-top: 0.8em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu ul li {
+    width: 25%;
+    transition: 0.3s;
+}
+
+#menu ul li:hover {
+    font-weight: 600;
+}
+
+#menu ul li:first-child {
+    display: none;
+}
+
+#menu ul li i {
+    color: #2429AF;
+}
+
+.subrayado li {
+    width: 25%;
+    position: relative;
+}
+
+.subrayado a {
+    display: inline-block;
+    position: relative;
+}
+
+.subrayado a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: -0.5em;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #2429AF;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.subrayado a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+#biografia {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.titulo {
+    width: 50%;
+    font-size: 3.5em;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+#biografia p {
+    padding-top: 1.5em;
+    width: 40%;
+    font-size: 1.4em;
+}
+
+#proyectos h1 {
+    padding-left: 10%;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+figure {
+    width: 60%;
+}
+
+.numero {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.derecha {
+    margin: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: right;
+}
+
+.derecha p {
+    width: 30%;
+    font-size: 1.2em;
+    padding-right: 4em;
+    text-align: right;
+    align-self: center;
+}
+
+.izquierda {
+    margin: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: left;
+}
+
+.izquierda p {
+    width: 30%;
+    font-size: 1.2em;
+    padding-left: 4em;
+    text-align: left;
+    align-self: center;
+}
+
+#contacto {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 8em;
+}
+
+#contacto h1 {
+    padding-top: 2em;
+}
+
+.informacion {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+iframe {
+    width: 35vw;
+    height: 300px;
+}
+
+form {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 2em;
+    margin-bottom: 1em;
+    padding: 1em;
+    font-size: 0.9em;
+    border: none;
+    color: #2429AF;
+    background: #2429af14;
+}
+
+textarea {
+    resize: none;
+    height: 20vh;
+    margin-bottom: 1em;
+    padding: 1em;
+    font-size: 0.9em;
+    border: none;
+    color: #2429AF;
+    background: #2429af14;
+}
+
+input[type=submit] {
+    height: 3em;
+}
+
+input[type=submit]:hover {
+    background-color: #2429af34;
+    border: 1px #2429af34;
+    border-radius: 4px;
+}
+
+.informacion2 {
+    padding-top: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.informacion2 ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.informacion2 ul li {
+    padding: 1em;
+}
+
+.informacion2 ul li a i {
+    color: #2429AF;
+}
+
+@media screen and (max-width: 900px) {
+
+    header {
+        position: fixed;
+    }
+
+    #menu ul li:first-child {
+        display: block;
+        padding-bottom: 1em;
+    }
+
+    #menu ul li:not(:first-child) {
+        display: none;
+    }
+
+    #menu ul {
+        position: fixed;
+        right: 3em;
+        height: auto;
+        padding: 0.6em;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #menu ul li {
+        text-align: right;
+        margin-bottom: 1em;
+    }
+
+    #menu ul:hover li {
+        display: block;
+    }
+
+    #biografia {
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+    }
+
+    .titulo {
+        font-size: 2.5em;
+    }
+
+    #biografia p {
+        width: 70%;
+        padding: 0;
+    }
+
+    #proyectos h1 {
+        padding: 0;
+        margin: 50px;
+        width: auto;
+    }
+
+    figure {
+        width: 100%;
+        padding-bottom: 1em;
+    }
+
+    .derecha {
+        flex-direction: column-reverse;
+
+    }
+
+    .derecha p {
+        width: 50%;
+        padding: 0;
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    .izquierda {
+        flex-direction: column;
+    }
+
+    .izquierda p {
+        width: 50%;
+        padding: 0;
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    .informacion {
+        flex-direction: column-reverse;
+    }
+
+    form {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .titulo {
+        width: 80%;
+        padding-top: 2em;
+        font-size: 2em;
+    }
+
+    #biografia p {
+        font-size: 1em;
+    }
+
+    .derecha p {
+        width: 80%;
+    }
+
+    .izquierda p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .informacion2 {
+        flex-direction: column;
+    }
+
+    .informacion2 p {
+        font-size: 0.8em;
+        margin-bottom: 1em;
+    }
+
+    .informacion2 ul {
+        justify-content: space-evenly;
+    }
+
+    .informacion2 ul li {
+        padding: 2em 0;
+    }
+
+    iframe {
+        height: 8em;
+    }
+}
