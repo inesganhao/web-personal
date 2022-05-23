@@ -179,6 +179,7 @@ figure {
 }
 
 .informacion {
+    padding-bottom: 8em;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
